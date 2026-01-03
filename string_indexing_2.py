@@ -13,4 +13,7 @@ values = "".join(char if char not in seperators else " " for char in number_two 
 print(values) # extract numbers from the above string
 
 # convert the string to int and print the values
-print([int(i) for i in values])
+list_of_numbers = [int(i) for i in values]
+print(list_of_numbers)
+
+print("".join(str(i) for i in list_of_numbers))
